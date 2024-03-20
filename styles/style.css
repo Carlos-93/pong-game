@@ -1,0 +1,93 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    gap: 3.5rem;
+}
+
+canvas {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-left: 2px dashed #ffffff;
+    border-right: 2px dashed #ffffff;
+    box-shadow: 0 0 60px #F7DF1E;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.7), rgba(30, 35, 38, 0.7)),
+        url(../assets/images/wallpaper.jpg);
+}
+
+.canvas-scored {
+    box-shadow: 0 0 60px #00FF00;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    margin-top: 2vw;
+    animation: pulse 1s infinite;
+}
+
+.scores {
+    display: flex;
+    text-align: center;
+    align-items: end;
+    gap: 10rem;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.score-01,
+.score-02 {
+    width: 5rem;
+}
+
+.bodyIndex {
+    gap: 0rem;
+}
+
+.bodyIndex h1,
+h3 {
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bodyIndex h1 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.bodyIndex h1:hover,
+h3:hover {
+    filter: drop-shadow(0px 0px 10px #ffcb87);
+}
+
+.imgIndex {
+    width: 40vw;
+    margin-top: 7rem;
+}
+
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0px 0px 20px #ffcb87);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 5px #ffcb87);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 20px #ffcb87);
+    }
+}
