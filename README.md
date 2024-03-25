@@ -1,4 +1,5 @@
-<img src="https://github.com/Carlos-93/pong-game/blob/main/assets/images/JavaScript.png" width="150" style="border-radius: 10px">
+<img src="https://github.com/Carlos-93/pong-game/blob/main/assets/images/JavaScript.png" width="150">
 
-# pong-game
- Developing a Pong game using the canvas tag with HTML, CSS and JavaScript
+# Welcome to my Pong game in HTML Canvas
+
+This project is a recreation of the classic Pong game developed using the HTML tag canvas, along with CSS and JavaScript for an interactive and dynamic experience.
