@@ -1,14 +1,62 @@
+/* Estilos base y reset */
 body {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
     background-color: #111111;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     gap: 3.5rem;
+}
+
+img,
+.imgIndex {
+    animation: pulse 1s infinite;
+}
+
+/* Estilos específicos para la página de inicio */
+.bodyIndex {
+    margin-top: 2em;
+    gap: 1em;
+}
+
+.bodyIndex h1,
+h3 {
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bodyIndex h1:hover,
+h3:hover {
+    filter: drop-shadow(0px 0px 10px #ffcb87);
+}
+
+.bodyIndex h1 {
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin: 1rem 0;
+}
+
+.imgIndex {
+    width: 40em;
+}
+
+/* Estilos específicos para la página de juego */
+.scores {
+    display: flex;
+    text-align: center;
+    align-items: end;
+    gap: 10rem;
+    color: #ffffff;
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+.score-01,
+.score-02 {
+    width: 5rem;
 }
 
 canvas {
@@ -19,65 +67,20 @@ canvas {
     box-shadow: 0 0 60px #F7DF1E;
     border-radius: 10px;
     background: linear-gradient(to top, rgba(30, 35, 38, 0.7), rgba(30, 35, 38, 0.7)),
-        url(../assets/images/wallpaper.jpg);
+        url(../assets/images/wallpaper.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
 }
 
 .canvas-scored {
     box-shadow: 0 0 60px #00FF00;
 }
 
-a {
-    text-decoration: none;
-}
-
-img {
-    margin-top: 2vw;
-    animation: pulse 1s infinite;
-}
-
-.scores {
-    display: flex;
-    text-align: center;
-    align-items: end;
-    gap: 10rem;
-    color: #ffffff;
-    font-size: 3rem;
-}
-
-.score-01,
-.score-02 {
-    width: 5rem;
-}
-
-.bodyIndex {
-    gap: 0rem;
-}
-
-.bodyIndex h1,
 h3 {
-    color: #ffffff;
-    text-align: center;
-    cursor: pointer;
+    font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
-.bodyIndex h1 {
-    font-size: 2vw;
-}
-
-h3 {
-    font-size: 1.2rem;
-}
-
-.bodyIndex h1:hover,
-h3:hover {
-    filter: drop-shadow(0px 0px 10px #ffcb87);
-}
-
-.imgIndex {
-    width: 40vw;
-    margin-top: 7rem;
-}
-
+/* Animaciones y transiciones */
 @keyframes pulse {
     0% {
         filter: drop-shadow(0px 0px 20px #ffcb87);
@@ -89,5 +92,82 @@ h3:hover {
 
     100% {
         filter: drop-shadow(0px 0px 20px #ffcb87);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    canvas {
+        width: 43em;
+    }
+
+    img {
+        width: 20rem;
+    }
+
+    .scores {
+        gap: 8.5rem;
+    }
+
+    .imgIndex {
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    canvas {
+        width: 35em;
+    }
+
+    img {
+        width: 15rem;
+    }
+
+    .scores {
+        gap: 7rem;
+    }
+
+    .bodyIndex h1 {
+        margin: 0.3rem 0;
+    }
+
+    .imgIndex {
+        width: 25em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    canvas {
+        width: 27em;
+    }
+
+    img {
+        width: 12rem;
+    }
+
+    .scores {
+        gap: 4.5rem;
+    }
+
+    .imgIndex {
+        width: 22em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    canvas {
+        width: 21em;
+    }
+
+    img {
+        width: 10rem;
+    }
+
+    .scores {
+        gap: 2.5rem;
+    }
+
+    .imgIndex {
+        width: 20em;
     }
 }
