@@ -1,4 +1,4 @@
-<img src="https://github.com/Carlos-93/pong-game/blob/main/assets/images/logo.png" width="150">
+<img src="https://github.com/Carlos-93/pong-game/blob/main/assets/images/logo.png" width="300">
 
 # Welcome to my Pong game in HTML Canvas
 
